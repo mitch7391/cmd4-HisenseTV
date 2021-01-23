@@ -1,0 +1,15 @@
+{
+            "platform": "Cmd4",
+            "name": "Cmd4",
+            "outputConstants": true,
+            "accessories": [
+                {
+                    "type": "Switch",
+                    "displayName": "My_Switch",
+                    "on": "FALSE",
+                    "name": "Hisense",
+                    "stateChangeResponseTime": 1,
+                    "state_cmd": "bash /home/pi/HisenseSwitch.sh"                    
+                }
+            ]
+        },
