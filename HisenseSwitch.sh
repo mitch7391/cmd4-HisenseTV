@@ -6,6 +6,8 @@ ip="192.168.0.156"
 tvMAC="7C:B3:7B:76:77:D4"
 # MAC Address of device paired to the TV through the RemoteNOW app.
 pairedMAC="8C:84:01:20:57:18"
+# File path of saved Hisense Certificate.
+certPath="/home/pi/hisense.crt"
 
 if [ "$1" = "Get" ]; then
   case "$3" in
@@ -31,7 +33,7 @@ if [ "$1" = "Set" ]; then
         wakeonlan "$tvMAC"
       else
         # TV can turn off using MQTT.
-        mosquitto_pub --cafile /home/pi/hisense.crt --insecure -h $ip -p 36669 -P multimqttservice -u hisenseservice -t "/remoteapp/tv/remote_service/"$pairedMAC"$normal/actions/sendkey" -m "KEY_POWER"
+        mosquitto_pub --cafile $certPath --insecure -h $ip -p 36669 -P multimqttservice -u hisenseservice -t "/remoteapp/tv/remote_service/"$pairedMAC"$normal/actions/sendkey" -m "KEY_POWER"
       fi
       ;;
 
