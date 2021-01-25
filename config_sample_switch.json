@@ -1,10 +1,11 @@
 {
             "platform": "Cmd4",
             "name": "Cmd4",
-            "outputConstants": true,
+            "restartRecover": false,
             "accessories": [
                 {
                     "type": "Switch",
+                    "outputConstants": true,
                     "displayName": "My_Switch",
                     "on": "FALSE",
                     "name": "Hisense",
