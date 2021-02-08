@@ -14,7 +14,7 @@ if [ "$1" = "Get" ]; then
 
     On )
       # Polls the TV over your network to see if it is still active.
-      if [ $(timeout 2 /bin/bash -c "(echo > /dev/tcp/"$ip"/36669) > /dev/null 2>&1 && echo 1 || echo 0")  = '1' ]; then
+      if [ $(timeout 2 /bin/bash -c "(echo > /dev/tcp/"$ip"/36669) > /dev/null 2>&1 && echo 1 || echo 0)"  = '1' ]; then
         echo 1
       else
         echo 0
@@ -28,7 +28,7 @@ if [ "$1" = "Set" ]; then
   case "$3" in
 
     On )
-      if [ "$4" = "true" ]; then
+      if [ "$4" = "1" ]; then
         # TV can only be turned back on by WOL using your TV MAC ADDRESS.
         wakeonlan "$tvMAC"
       else

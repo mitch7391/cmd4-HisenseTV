@@ -1,7 +1,8 @@
 {
             "platform": "Cmd4",
             "name": "Cmd4",
-            "outputConstants": true,
+            "outputConstants": false,
+            "restartRecover": false,
             "accessories": [
                 {
                     "type": "Switch",

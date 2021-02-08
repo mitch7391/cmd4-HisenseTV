@@ -39,7 +39,7 @@ qmierjfpaoisdjmçfaisldjcçfskdjafcaçskdjcçfmasidcf (etc. etc. etc)
 15. Restart Homebridge and all should be well... Unless you are me and everything I do goes wrong several times before it goes right haha.
 
 ## Known Bug:
-<B>Right now there is a breaking issue in homebridge-cmd4 `v.3.0.x` that causes issues with 'set' commands. Please continue to use homebridge-cmd4 `v2.4.4` until these issues have been sorted out. The jump to `v.3.0.x` also requires breaking changes in your `config.json`, which will be updated here when stable. </B> [Issue here.](https://github.com/ztalbot2000/homebridge-cmd4/issues/76)
+~~<B>Right now there is a breaking issue in homebridge-cmd4 `v.3.0.x` that causes issues with 'set' commands. Please continue to use homebridge-cmd4 `v2.4.4` until these issues have been sorted out. The jump to `v.3.0.x` also requires breaking changes in your `config.json`, which will be updated here when stable. </B> [Issue here.](https://github.com/ztalbot2000/homebridge-cmd4/issues/76)~~
 
 ## Troubleshooting:
 - After `Step 9` and before `Step 10`; you can run the following two commands to see that you have the certs and your MAC Address correct. If the following commands do not work, then you have done something wrong with the certificatess or the MAC Addressfor the paired device and it is the not a problem the shell script or `homebridge-cmd4`. 
