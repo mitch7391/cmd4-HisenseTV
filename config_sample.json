@@ -1,0 +1,336 @@
+{
+            "platform": "Cmd4",
+            "name": "Cmd4",
+            "outputConstants": false,
+            "restartRecover": false,
+            "Cmd4_Mode": "FullyPolled",
+            "statusMsg": true,
+            "accessories": [
+                {
+                    "type": "Television",
+                    "category": "TELEVISION",
+                    "publishExternally": true,
+                    "name": "Hisense",
+                    "active": "INACTIVE",
+                    "activeIdentifier": 0,
+                    "configuredName": "Hisense",
+                    "sleepDiscoveryMode": "ALWAYS_DISCOVERABLE",
+                    "accessories": [
+                        {
+                            "type": "televisionSpeaker",
+                            "displayName": "My_TelevisionSpeaker",
+                            "name": "My_TelevisionSpeaker",
+                            "active": "INACTIVE",
+                            "mute": "FALSE",
+                            "volumeSelector": 1,
+                            "volumeControlType": "ABSOLUTE",
+                            "state_cmd": "bash /home/pi/HisenseTV.sh",
+                            "polling": [
+                                {
+                                    "characteristic": "active",
+                                    "interval": 50,
+                                    "timeout": 3000
+                                },
+                                {
+                                    "characteristic": "volumeSelector",
+                                    "interval": 50,
+                                    "timeout": 3000
+                                }
+                            ]
+                        }
+                    ],
+                    "linkedTypes": [
+                        {
+                            "type": "InputSource",
+                            "displayName": "TV",
+                            "configuredName": "TV",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "TUNER",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 0,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "TV"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "HDMI1",
+                            "configuredName": "HDMI1",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "HDMI",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 1,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "HDMI1"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "HDMI2",
+                            "configuredName": "HDMI2",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "HDMI",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 2,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "HDMI2"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "HDMI3",
+                            "configuredName": "HDMI3",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "HDMI",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 3,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "HDMI3"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "HDMI4",
+                            "configuredName": "HDMI4",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "HDMI",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 4,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "HDMI4"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "AV",
+                            "configuredName": "AV",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "COMPOSITE_VIDEO",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 5,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "AV"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "Netflix",
+                            "configuredName": "Netflix",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "APPLICATION",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 6,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "Netflix"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "Prime",
+                            "configuredName": "Prime",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "APPLICATION",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 7,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "Prime"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "YouTube",
+                            "configuredName": "YouTube",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "APPLICATION",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 8,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "Youtube"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "Foxtel",
+                            "configuredName": "Foxtel",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "APPLICATION",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 9,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "Foxtel"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "Stan",
+                            "configuredName": "Stan",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "APPLICATION",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 10,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "Stan"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "Plex",
+                            "configuredName": "Plex",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "APPLICATION",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 11,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "Plex"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "ABCiview",
+                            "configuredName": "ABCiview",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "APPLICATION",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 12,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "ABCiview"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "YoutubeKids",
+                            "configuredName": "YoutubeKids",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "APPLICATION",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 13,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "YoutubeKids"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "SBSONDEMAND",
+                            "configuredName": "SBSONDEMAND",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "APPLICATION",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 14,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "SBSONDEMAND"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "AppsNow",
+                            "configuredName": "AppsNow",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "APPLICATION",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 15,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "AppsNow"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "KidoodleTV",
+                            "configuredName": "KidoodleTV",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "APPLICATION",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 16,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "KidoodleTV"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "GameCenter",
+                            "configuredName": "GameCenter",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "APPLICATION",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 17,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "GameCenter"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "ToonGoggles",
+                            "configuredName": "ToonGoggles",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "APPLICATION",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 18,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "ToonGoggles"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "YuppTV",
+                            "configuredName": "YuppTV",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "APPLICATION",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 19,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "YuppTV"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "AccuWeather",
+                            "configuredName": "AccuWeather",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "APPLICATION",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 20,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "AccuWeather"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "TVBrowser",
+                            "configuredName": "TVBrowser",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "APPLICATION",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 21,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "TVBrowser"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "SHOWMAX",
+                            "configuredName": "SHOWMAX",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "APPLICATION",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 22,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "SHOWMAX"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "MiguTV",
+                            "configuredName": "MiguTV",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "APPLICATION",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 23,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "MiguTV"
+                        },
+                        {
+                            "type": "InputSource",
+                            "displayName": "NiHaoTV",
+                            "configuredName": "NiHaoTV",
+                            "currentVisibilityState": "SHOWN",
+                            "inputSourceType": "APPLICATION",
+                            "isConfigured": "CONFIGURED",
+                            "identifier": 24,
+                            "targetVisibilityState": "SHOWN",
+                            "name": "NiHaoTV"
+                        }
+                    ],
+                    "remoteKey": "SELECT",
+                    "polling": [
+                        {
+                            "characteristic": "active",
+                            "interval": 5,
+                            "timeout": 3000
+                        },
+                        {
+                            "characteristic": "activeIdentifier",
+                            "interval": 5,
+                            "timeout": 3000
+                        }
+                    ],
+                    "stateChangeResponseTime": 1,
+                    "state_cmd": "bash /home/pi/HisenseTV.sh"
+                }
+            ]
+        },
