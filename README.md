@@ -1,3 +1,17 @@
+<span align="center">
+  
+[![buy-me-a-coffee](https://badgen.net/badge/icon/BuyMeACoffee/orange?icon=buymeacoffee&label)](https://www.paypal.com/donate/?business=FWN5P4BP7NJT4&no_recurring=1&item_name=Shout+me+a+coffee+%3A%29&currency_code=AUD)
+[![reddit](https://badgen.net/badge/icon/Mitch7391/red?icon=reddit&label)](https://www.reddit.com/user/Mitch7391/)
+  
+</span>
+
+<!-- prettier-ignore -->
+> [!NOTE]
+> An archived repository means that all users will still be able to use the project, but you will not be able to submit issues or requests, and it will no longer be updated. I strongly advise the use of [homebridge-hisense-tv-remotenow](https://github.com/MrAsterisco/homebridge-hisense-tv).
+>
+> For the first time ever I will be adding a donate link to my pages. This is just if anyone would like to shout me a coffee :) I have also added a link to my Reddit account if anyone does need to get hold of me for any reason.
+> 
+
 # cmd4-HisenseTV
 Shell script to integrate Hisense TVs using the RemoteNOW app with Homebridge through the homebridge-cmd4 plug-in.
 
